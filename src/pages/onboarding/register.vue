@@ -121,7 +121,7 @@ q-page.flex.flex-center.column
   )
     div
       .title
-        span Hypha
+        span lightfood.
         strong EARTH
       .subtitle.q-mb-lg Create the next chapter in Earth's history
   .content.q-pa-md.row.q-col-gutter-md
