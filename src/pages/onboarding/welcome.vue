@@ -16,7 +16,7 @@ q-page.flex.flex-center.column
       .title
         span lightfood.
         strong EARTH
-      .subtitle.q-mb-lg Create the next chapter in Earth's history
+      .subtitle.q-mb-lg
   .content.q-pa-md
     .content-title Welcome to Hypha!
     p The DHO (Decentralized Human Organization) is a framework to build your organization from the ground up in an organic and participative way and together with others. We focus on two core functions at this point, decentralized payroll and distribution accounting for organizational and bioregional contexts.

@@ -123,7 +123,7 @@ q-page.flex.flex-center.column
       .title
         span lightfood.
         strong EARTH
-      .subtitle.q-mb-lg Create the next chapter in Earth's history
+      .subtitle.q-mb-lg
   .content.q-pa-md.row.q-col-gutter-md
     .col-xs-12.col-md-3
       .content-title Register Account
