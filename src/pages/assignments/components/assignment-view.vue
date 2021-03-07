@@ -122,7 +122,7 @@ export default {
       a.link.q-my-md(:href="url" target="_blank") {{ url | truncate(60) }}
     fieldset.q-mt-sm
       legend Salary
-      p Fields below display the payout of this assignment for a {{ this.monthly ? 'full lunar cycle (ca. 1 month)' : 'single lunar period (ca. 1 week)' }} as well as % committed and % deferred. The payout is shown as USD equivalent and the corresponding amounts in SEEDS, HVOICE, HYPHA and HUSD.
+      p Fields below display the payout of this assignment for a {{ this.monthly ? 'full lunar cycle (ca. 1 month)' : 'single lunar period (ca. 1 week)' }} as well as % committed and % deferred. The payout is shown as USD equivalent and the corresponding amount in LIGHT.
       .row.q-col-gutter-xs
         .col-xs-12.col-md-6
           q-input.bg-grey-4.text-black(
@@ -143,14 +143,14 @@ export default {
       .row.q-my-sm
         strong SALARY CALCULATION (BASED ON USD EQUIVALENT OF USD {{ usdEquity }})
       .row.q-col-gutter-xs
-        .col-4
-          q-input.bg-liquid.text-black(
-            v-model="tokenHusd"
-            outlined
-            dense
-            readonly
-          )
-          .hint HUSD
+        //- .col-4
+        //-   q-input.bg-liquid.text-black(
+        //-     v-model="tokenHusd"
+        //-     outlined
+        //-     dense
+        //-     readonly
+        //-   )
+        //-   .hint HUSD
         .col-4
           q-input.bg-liquid.text-black(
             v-model="tokenHvoice"
@@ -158,15 +158,15 @@ export default {
             dense
             readonly
           )
-          .hint HVOICE
-        .col-4
-          q-input.bg-liquid.text-black(
-            v-model="tokenHypha"
-            outlined
-            dense
-            readonly
-          )
-          .hint HYPHA
+          .hint LIGHT
+        //- .col-4
+        //-   q-input.bg-liquid.text-black(
+        //-     v-model="tokenHypha"
+        //-     outlined
+        //-     dense
+        //-     readonly
+        //-   )
+        //-   .hint HYPHA
       .row
         q-toggle(v-model="monthly" label="Show tokens for a full lunar cycle (ca. 1 month)")
     lunar-cycles-display(

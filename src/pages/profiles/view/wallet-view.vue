@@ -130,7 +130,7 @@ export default {
         return '#3d85c6'
       } else if (amount.includes('HYPHA')) {
         return '#434343'
-      } else if (amount.includes('HVOICE')) {
+      } else if (amount.includes('LIGHT')) {
         return '#e69138'
       } else if (amount.includes('SEEDS')) {
         return '#589A46'
@@ -156,15 +156,15 @@ export default {
         div
           .name LIQUID SEEDS
           .amount {{ new Intl.NumberFormat().format(parseInt(tokens.liquidSeeds), { style: 'currency' }) }}
-      .token-info.row.flex.items-center
-        img.icon(src="~assets/icons/hypha.svg")
-        div
-          .name HYPHA
-          .amount {{ new Intl.NumberFormat().format(parseInt(tokens.hypha), { style: 'currency' }) }}
+      //- .token-info.row.flex.items-center
+      //-   img.icon(src="~assets/icons/hypha.svg")
+      //-   div
+      //-     .name HYPHA
+      //-     .amount {{ new Intl.NumberFormat().format(parseInt(tokens.hypha), { style: 'currency' }) }}
       .token-info.row.flex.items-center
         img.icon(src="~assets/icons/hvoice.svg")
         div
-          .name HVOICE
+          .name LIGHT
           .amount {{ new Intl.NumberFormat().format(tokens.hvoice, { style: 'currency' }) }}
       .token-info.row.flex.items-center
         img.icon(src="~assets/icons/husd.svg")
@@ -282,7 +282,7 @@ export default {
         .token-info.row.flex.items-center(v-if="show3" style="transition-delay: 0.2s")
           img.icon(src="~assets/icons/hvoice.svg")
           div
-            .name HVOICE
+            .name LIGHT
             q-spinner-dots(
               v-if="loading"
               color="primary"

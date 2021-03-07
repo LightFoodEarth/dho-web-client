@@ -169,7 +169,7 @@ export default {
           dense
           bg-color="liquid"
         )
-        .hint HVOICE
+        .hint LIGHT
       .col-6
         q-input.bd-liquid.text-black(
           ref="hypha"

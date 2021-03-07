@@ -85,7 +85,7 @@ export default {
     a.link.q-my-md(:href="url" target="_blank") {{ url | truncate(60) }}
   fieldset.q-mt-sm
     legend Payout
-    p Fields below display the payout for this contribution as well as % deferred salary. The payout is shown as USD equivalent and the corresponding amounts received in SEEDS, HVOICE, HYPHA and HUSD.
+    p Fields below display the payout for this contribution as well as % deferred salary. The payout is shown as USD equivalent and the corresponding amounts received in LIGHT.
     .row.q-my-sm
       strong SALARY CALCULATION
     .row.q-col-gutter-xs
@@ -112,7 +112,7 @@ export default {
           dense
           readonly
         )
-        .hint HVOICE
+        .hint LIGHT
       .col-6
         q-input.bg-liquid.text-black(
           v-model="tokenHypha"

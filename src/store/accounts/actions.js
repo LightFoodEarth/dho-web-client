@@ -169,7 +169,7 @@ export const verifyOTP = async function ({ commit, state }, { smsOtp, smsNumber,
       }],
       data: {
         voter: telosAccount,
-        treasury_symbol: '2,HVOICE',
+        treasury_symbol: '2,LIGHT',
         referrer: null
       }
     })

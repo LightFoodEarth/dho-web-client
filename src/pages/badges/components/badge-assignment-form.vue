@@ -121,15 +121,15 @@ export default {
               size="xs"
             )
         .hint Deferred Seeds
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="form.husd"
-          type="number"
-          outlined
-          readonly
-          dense
-        )
-        .hint HUSD
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="form.husd"
+      //-     type="number"
+      //-     outlined
+      //-     readonly
+      //-     dense
+      //-   )
+      //-   .hint HUSD
       .col-6
         q-input.bg-liquid.text-black(
           v-model="form.hvoice"
@@ -138,16 +138,16 @@ export default {
           readonly
           dense
         )
-        .hint HVOICE
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="form.hypha"
-          type="number"
-          readonly
-          outlined
-          dense
-        )
-        .hint HYPHA
+        .hint LIGHT
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="form.hypha"
+      //-     type="number"
+      //-     readonly
+      //-     outlined
+      //-     dense
+      //-   )
+      //-   .hint HYPHA
   fieldset.q-mt-sm
     legend Lunar cycles
     p This is the lunar start and re-evaluation date for this badge assignment, followed by the number of lunar cycles. We recommend a maximum of 12 periods before reevaluation.

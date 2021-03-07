@@ -367,8 +367,8 @@ export default {
               | {{ props.row.requestor }}
             q-td(key="amount_requested" :props="props")
               .flex.items-center
-                img.table-icon(v-if="props.row.amount_requested.includes('HYPHA')" src="~assets/icons/hypha.svg")
-                img.table-icon(v-if="props.row.amount_requested.includes('HVOICE')" src="~assets/icons/hvoice.svg")
+                //- img.table-icon(v-if="props.row.amount_requested.includes('HYPHA')" src="~assets/icons/hypha.svg")
+                img.table-icon(v-if="props.row.amount_requested.includes('LIGHT')" src="~assets/icons/hvoice.svg")
                 img.table-icon(v-if="props.row.amount_requested.includes('USD')" src="~assets/icons/husd.svg")
                 img.table-icon(v-if="props.row.amount_requested.includes('SEEDS')" src="~assets/icons/seeds.png")
                 | &nbsp;{{ new Intl.NumberFormat().format(parseInt(props.row.amount_requested), { style: 'currency' }) }}
@@ -376,8 +376,8 @@ export default {
              | {{ new Date(props.row.requested_date.slice(0, -4) + 'Z').toLocaleDateString()}}
             q-td(key="amountPaid" :props="props")
               .flex.items-center
-                img.table-icon(v-if="props.row.amountPaidCurrency.includes('HYPHA') || props.row.amount_requested.includes('HYPHA')" src="~assets/icons/hypha.svg")
-                img.table-icon(v-if="props.row.amountPaidCurrency.includes('HVOICE') || props.row.amount_requested.includes('HVOICE')" src="~assets/icons/hvoice.svg")
+                //- img.table-icon(v-if="props.row.amountPaidCurrency.includes('HYPHA') || props.row.amount_requested.includes('HYPHA')" src="~assets/icons/hypha.svg")
+                img.table-icon(v-if="props.row.amountPaidCurrency.includes('LIGHT') || props.row.amount_requested.includes('LIGHT')" src="~assets/icons/hvoice.svg")
                 img.table-icon(v-if="props.row.amountPaidCurrency.includes('USD') || props.row.amount_requested.includes('USD')" src="~assets/icons/husd.svg")
                 img.table-icon(v-if="props.row.amountPaidCurrency.includes('SEEDS') || props.row.amount_requested.includes('SEEDS')" src="~assets/icons/seeds.png")
                 | &nbsp;{{ new Intl.NumberFormat().format(parseInt(props.row.amountPaid), { style: 'currency' }) }}
@@ -386,8 +386,8 @@ export default {
               span(v-if="props.row.amountPaid > 0 && props.row.amountPaid < parseFloat(props.row.amount_requested)") pending
               div(v-if="props.row.amountPaid === parseFloat(props.row.amount_requested)")
                 .flex.items-center
-                  img.table-icon(v-if="props.row.amountPaidCurrency.includes('HYPHA') || props.row.amount_requested.includes('HYPHA')" src="~assets/icons/hypha.svg")
-                  img.table-icon(v-if="props.row.amountPaidCurrency.includes('HVOICE') || props.row.amount_requested.includes('HVOICE')" src="~assets/icons/hvoice.svg")
+                  //- img.table-icon(v-if="props.row.amountPaidCurrency.includes('HYPHA') || props.row.amount_requested.includes('HYPHA')" src="~assets/icons/hypha.svg")
+                  img.table-icon(v-if="props.row.amountPaidCurrency.includes('LIGHT') || props.row.amount_requested.includes('LIGHT')" src="~assets/icons/hvoice.svg")
                   img.table-icon(v-if="props.row.amountPaidCurrency.includes('USD') || props.row.amount_requested.includes('USD')" src="~assets/icons/husd.svg")
                   img.table-icon(v-if="props.row.amountPaidCurrency.includes('SEEDS') || props.row.amount_requested.includes('SEEDS')" src="~assets/icons/seeds.png")
                   | &nbsp;{{ new Intl.NumberFormat().format(parseInt(props.row.amountPaid), { style: 'currency' }) }}

@@ -65,54 +65,54 @@ export const getTokensAmounts = async function (context, account) {
   })
 
   if (result && result.rows && result.rows.length) {
-    const row = result.rows.find(r => /HVOICE$/.test(r.liquid))
+    const row = result.rows.find(r => /LIGHT$/.test(r.liquid))
     if (row) {
       tokens.hvoice = parseFloat(row.liquid).toFixed(2)
     }
   }
 
-  result = await this.$api.getTableRows({
-    code: this.$config.contracts.hyphaToken,
-    scope: account,
-    table: 'accounts',
-    limit: 1000
-  })
+  // result = await this.$api.getTableRows({
+  //   code: this.$config.contracts.hyphaToken,
+  //   scope: account,
+  //   table: 'accounts',
+  //   limit: 1000
+  // })
 
-  if (result && result.rows && result.rows.length) {
-    const row = result.rows.find(r => /HYPHA$/.test(r.balance))
-    if (row) {
-      tokens.hypha = parseFloat(row.balance).toFixed(2)
-    }
-  }
+  // if (result && result.rows && result.rows.length) {
+  //   const row = result.rows.find(r => /HYPHA$/.test(r.balance))
+  //   if (row) {
+  //     tokens.hypha = parseFloat(row.balance).toFixed(2)
+  //   }
+  // }
 
-  result = await this.$api.getTableRows({
-    code: this.$config.contracts.husdToken,
-    scope: account,
-    table: 'accounts',
-    limit: 1000
-  })
+  // result = await this.$api.getTableRows({
+  //   code: this.$config.contracts.husdToken,
+  //   scope: account,
+  //   table: 'accounts',
+  //   limit: 1000
+  // })
 
-  if (result && result.rows && result.rows.length) {
-    const row = result.rows.find(r => /HUSD$/.test(r.balance))
-    if (row) {
-      tokens.husd = parseFloat(row.balance).toFixed(4)
-    }
-  }
+  // if (result && result.rows && result.rows.length) {
+  //   const row = result.rows.find(r => /HUSD$/.test(r.balance))
+  //   if (row) {
+  //     tokens.husd = parseFloat(row.balance).toFixed(4)
+  //   }
+  // }
 
-  result = await this.$api.getTableRows({
-    code: this.$config.contracts.seedsEscrow,
-    scope: this.$config.contracts.seedsEscrow,
-    table: 'locks',
-    index_position: 3,
-    key_type: 'i64',
-    lower_bound: account,
-    upper_bound: account,
-    limit: 1000
-  })
+  // result = await this.$api.getTableRows({
+  //   code: this.$config.contracts.seedsEscrow,
+  //   scope: this.$config.contracts.seedsEscrow,
+  //   table: 'locks',
+  //   index_position: 3,
+  //   key_type: 'i64',
+  //   lower_bound: account,
+  //   upper_bound: account,
+  //   limit: 1000
+  // })
 
-  if (result && result.rows && result.rows.length) {
-    tokens.deferredSeeds = result.rows.reduce((acc, row) => acc + parseFloat(row.quantity), 0).toFixed(4)
-  }
+  // if (result && result.rows && result.rows.length) {
+  //   tokens.deferredSeeds = result.rows.reduce((acc, row) => acc + parseFloat(row.quantity), 0).toFixed(4)
+  // }
 
   result = await this.$api.getTableRows({
     code: this.$config.contracts.seedsToken,

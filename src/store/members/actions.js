@@ -7,7 +7,7 @@ export const checkRegistration = async function ({ commit, rootState }) {
   })
 
   if (result && result.rows.length) {
-    if (result.rows.some(o => /HVOICE$/.test(o.liquid))) {
+    if (result.rows.some(o => /LIGHT$/.test(o.liquid))) {
       commit('setRegistered', true)
     } else {
       commit('setRegistered', false)
@@ -26,7 +26,7 @@ export const apply = async function ({ state, rootState, commit }, content) {
       name: 'regvoter',
       data: {
         voter: rootState.accounts.account,
-        treasury_symbol: '2,HVOICE',
+        treasury_symbol: '2,LIGHT',
         referrer: null
       }
     })

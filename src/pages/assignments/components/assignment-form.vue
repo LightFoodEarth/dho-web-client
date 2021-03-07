@@ -178,7 +178,7 @@ export default {
   fieldset.q-mt-sm
     legend Salary
     p
-      | Please enter your % commitment and % HYPHA tokens vs. HUSD tokens for this assignment. The payout of this assignment computes the corresponding amounts in HVOICE, HYPHA and HUSD for a {{ this.monthly ? 'full lunar cycle (ca. 1 month)' : 'single lunar period (ca. 1 week)' }}.
+      | Please enter your % commitment... The payout of this assignment computes the corresponding amounts in LIGHT for a {{ this.monthly ? 'full lunar cycle (ca. 1 month)' : 'single lunar period (ca. 1 week)' }}.
     .row.q-col-gutter-xs.q-mb-md
       .col-xs-12.col-md-6
         q-input(
@@ -219,14 +219,14 @@ export default {
     .row.q-my-sm
       strong SALARY CALCULATION (BASED ON USD EQUIVALENT OF USD {{ usdEquity }})
     .row.q-col-gutter-xs
-      .col-4
-        q-input.bg-liquid.text-black(
-          v-model="display.husd"
-          outlined
-          dense
-          readonly
-        )
-        .hint husd
+      //- .col-4
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="display.husd"
+      //-     outlined
+      //-     dense
+      //-     readonly
+      //-   )
+      //-   .hint husd
       .col-4
         q-input.bg-liquid.text-black(
           v-model="display.hvoice"
@@ -234,15 +234,15 @@ export default {
           dense
           readonly
         )
-        .hint hvoice
-      .col-4
-        q-input.bg-liquid.text-black(
-          v-model="display.hypha"
-          outlined
-          dense
-          readonly
-        )
-        .hint hypha
+        .hint light
+      //- .col-4
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="display.hypha"
+      //-     outlined
+      //-     dense
+      //-     readonly
+      //-   )
+      //-   .hint hypha
     .row
       q-toggle(v-model="monthly" label="Show tokens for a full lunar cycle (ca. 1 month)")
   fieldset.q-mt-sm

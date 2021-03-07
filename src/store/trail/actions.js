@@ -15,8 +15,8 @@ export const getSupply = async function () {
     code: this.$config.contracts.decide,
     scope: this.$config.contracts.decide,
     table: 'treasuries',
-    lower_bound: 'HVOICE',
-    upper_bound: 'HVOICE'
+    lower_bound: 'LIGHT',
+    upper_bound: 'LIGHT'
   })
   if (result && result.rows.length) {
     return result.rows[0].supply

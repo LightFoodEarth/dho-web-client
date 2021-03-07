@@ -111,7 +111,7 @@ export default {
     a.link.q-my-md(:href="url" target="_blank") {{ url | truncate(60) }}
   fieldset.q-mt-sm
     legend Salary
-    p Fields below display the payout of this assignment for a {{ this.monthly ? 'full lunar cycle (ca. 1 month)' : 'single lunar period (ca. 1 week)' }} as well as % committed and % HYPHA tokens vs. HUSD tokens. The payout is shown as USD equivalent and the corresponding amounts in HVOICE, HYPHA and HUSD.
+    p Fields below display the payout of this assignment for a {{ this.monthly ? 'full lunar cycle (ca. 1 month)' : 'single lunar period (ca. 1 week)' }} as well as % committed and % HYPHA tokens vs. HUSD tokens. The payout is shown as USD equivalent and the corresponding amount in LIGHT.
     .row.q-col-gutter-xs
       .col-xs-12.col-md-6
         q-input.bg-grey-4.text-black(
@@ -147,7 +147,7 @@ export default {
           dense
           readonly
         )
-        .hint HVOICE
+        .hint LIGHT
       .col-4
         q-input.bg-liquid.text-black(
           v-model="tokenHypha"

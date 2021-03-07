@@ -114,15 +114,15 @@ export default {
               size="xs"
             )
         .hint Deferred Seeds
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="husd"
-          type="number"
-          outlined
-          readonly
-          dense
-        )
-        .hint HUSD
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="husd"
+      //-     type="number"
+      //-     outlined
+      //-     readonly
+      //-     dense
+      //-   )
+      //-   .hint HUSD
       .col-6
         q-input.bg-liquid.text-black(
           v-model="hvoice"
@@ -131,16 +131,16 @@ export default {
           readonly
           dense
         )
-        .hint HVOICE
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="hypha"
-          type="number"
-          readonly
-          outlined
-          dense
-        )
-        .hint HYPHA
+        .hint LIGHT
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="hypha"
+      //-     type="number"
+      //-     readonly
+      //-     outlined
+      //-     dense
+      //-   )
+      //-   .hint HYPHA
   lunar-cycles-display(
     :startPhase="startPhase"
     :endPhase="endPhase"

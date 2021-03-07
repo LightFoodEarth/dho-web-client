@@ -7,7 +7,7 @@ export const savePayoutProposal = async function ({ rootState }, draft) {
     { label: 'title', value: [ 'string', draft.title ] },
     { label: 'description', value: [ 'string', new Turndown().turndown(draft.description) ] },
     { label: 'seeds_amount', value: [ 'asset', `${parseFloat(draft.seeds).toFixed(4)} SEEDS` ] },
-    { label: 'hvoice_amount', value: [ 'asset', `${parseFloat(draft.hvoice).toFixed(2)} HVOICE` ] },
+    { label: 'hvoice_amount', value: [ 'asset', `${parseFloat(draft.hvoice).toFixed(2)} LIGHT` ] },
     { label: 'hypha_amount', value: [ 'asset', `${parseFloat(draft.hypha).toFixed(2)} HYPHA` ] },
     { label: 'husd_amount', value: [ 'asset', `${parseFloat(draft.husd).toFixed(2)} HUSD` ] }
   ]

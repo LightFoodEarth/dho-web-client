@@ -138,7 +138,7 @@ q-page.q-pa-lg
         .row.flex.q-col-gutter-xl
           .col-xs-12.col-sm-6.column.flex
             .text-h6.title Claim your Salary
-            p Claim your salary at the end of a lunar cycle and receive payouts in Seeds, HVoice, Hypha and HUSD.
+            p Claim your salary at the end of a lunar cycle and receive payouts in LIGHT.
           .col-xs-12.col-sm-6
             q-card.item-card
               .ribbon
