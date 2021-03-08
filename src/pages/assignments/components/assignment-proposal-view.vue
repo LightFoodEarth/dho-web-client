@@ -132,14 +132,14 @@ export default {
     .row.q-my-sm
       strong SALARY CALCULATION (BASED ON USD EQUIVALENT OF USD {{ usdEquity }})
     .row.q-col-gutter-xs
-      .col-4
-        q-input.bg-liquid.text-black(
-          v-model="tokenHusd"
-          outlined
-          dense
-          readonly
-        )
-        .hint HUSD
+      //- .col-4
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="tokenHusd"
+      //-     outlined
+      //-     dense
+      //-     readonly
+      //-   )
+      //-   .hint HUSD
       .col-4
         q-input.bg-liquid.text-black(
           v-model="tokenHvoice"
@@ -148,14 +148,14 @@ export default {
           readonly
         )
         .hint LIGHT
-      .col-4
-        q-input.bg-liquid.text-black(
-          v-model="tokenHypha"
-          outlined
-          dense
-          readonly
-        )
-        .hint HYPHA
+      //- .col-4
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="tokenHypha"
+      //-     outlined
+      //-     dense
+      //-     readonly
+      //-   )
+      //-   .hint HYPHA
     .row
       q-toggle(v-model="monthly" label="Show tokens for a full lunar cycle (ca. 1 month)")
   lunar-cycles-display(

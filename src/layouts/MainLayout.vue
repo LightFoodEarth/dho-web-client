@@ -141,7 +141,7 @@ q-layout(
                 :class="{ 'mobile-map-marked': !$q.platform.is.desktop }"
                 color="black"
               )
-              router-link.link(to="/dashboard").text-black Hypha DHO
+              router-link.link(to="/dashboard").text-black LightFood DHO
               .location(v-for="breadcrumb in breadcrumbs") &nbsp;/ {{ breadcrumb.title }}
           right-menu-guest
           right-menu-authenticated

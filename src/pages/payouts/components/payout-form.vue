@@ -227,15 +227,15 @@ export default {
           :readonly="!manualInput"
         )
         .hint SEEDS
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="form.husd"
-          type="number"
-          outlined
-          dense
-          :readonly="!manualInput"
-        )
-        .hint HUSD
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="form.husd"
+      //-     type="number"
+      //-     outlined
+      //-     dense
+      //-     :readonly="!manualInput"
+      //-   )
+      //-   .hint HUSD
       .col-6
         q-input.bg-liquid.text-black(
           v-model="form.hvoice"
@@ -244,16 +244,16 @@ export default {
           dense
           :readonly="!manualInput"
         )
-        .hint HVOICE
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="form.hypha"
-          type="number"
-          outlined
-          dense
-          :readonly="!manualInput"
-        )
-        .hint HYPHA
+        .hint LIGHT
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="form.hypha"
+      //-     type="number"
+      //-     outlined
+      //-     dense
+      //-     :readonly="!manualInput"
+      //-   )
+      //-   .hint HYPHA
     .row
       q-toggle(v-model="manualInput" label="Edit token fields (toggle back will erase the values)")
   .text-center.q-mt-sm

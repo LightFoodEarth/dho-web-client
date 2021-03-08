@@ -97,14 +97,14 @@ export default {
           readonly
         )
         .hint SEEDS
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="tokenHusd"
-          outlined
-          dense
-          readonly
-        )
-        .hint HUSD
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="tokenHusd"
+      //-     outlined
+      //-     dense
+      //-     readonly
+      //-   )
+      //-   .hint HUSD
       .col-6
         q-input.bg-liquid.text-black(
           v-model="tokenHvoice"
@@ -113,14 +113,14 @@ export default {
           readonly
         )
         .hint LIGHT
-      .col-6
-        q-input.bg-liquid.text-black(
-          v-model="tokenHypha"
-          outlined
-          dense
-          readonly
-        )
-        .hint HYPHA
+      //- .col-6
+      //-   q-input.bg-liquid.text-black(
+      //-     v-model="tokenHypha"
+      //-     outlined
+      //-     dense
+      //-     readonly
+      //-   )
+      //-   .hint HYPHA
   fieldset.q-mt-sm
     legend Vote results
     p This is the current tally for this proposal. Please vote with the buttons below. Repeat votes allowed until close.
