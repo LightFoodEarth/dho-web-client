@@ -9,8 +9,8 @@ export const profileRequired = {
     ...mapMutations('layout', ['setRightSidebarType'])
   },
   beforeMount () {
-    if (!this.profiles[this.account]) {
-      this.setRightSidebarType('profileRequired')
-    }
+    // if (!this.profiles[this.account]) {
+    //   this.setRightSidebarType('profileRequired')
+    // }
   }
 }
